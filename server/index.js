@@ -2,9 +2,10 @@ const express = require('express');
 const cors = require("cors");
 
 const app = express()
+app.use(cors());
 
 app.use(express.json()); // When we want to be able to accept JSON.
-app.use(cors()); //When we want to be able to accept cors
+//When we want to be able to accept cors
 
 app.get("/app/users", (req, res) => {
     let friends = ["Nitin", "Eric", "Judy", "Cameron", "Riley"];
