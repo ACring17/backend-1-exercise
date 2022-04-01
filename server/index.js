@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json()); // When we want to be able to accept JSON.
 //When we want to be able to accept cors
 
-app.get("/app/users", (req, res) => {
+app.get("/api/users", (req, res) => {
     let friends = ["Nitin", "Eric", "Judy", "Cameron", "Riley"];
     res.status(200).send(friends);
 });
